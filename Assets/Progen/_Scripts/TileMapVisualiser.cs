@@ -7,9 +7,9 @@ using UnityEngine.Tilemaps;
 public class TileMapVisualiser : MonoBehaviour
 {
     [SerializeField]
-    private Tilemap floorTilemap;
+    private Tilemap floorTilemap, wallTilemap;
     [SerializeField]
-    private TileBase floorTile; // can turn this into an array later to select random tiles
+    private TileBase floorTile, wallTop; // can turn this into an array later to select random tiles
 
     public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions)
     {
@@ -35,5 +35,11 @@ public class TileMapVisualiser : MonoBehaviour
     public void Clear()
     {
         floorTilemap.ClearAllTiles();
+        wallTilemap.ClearAllTiles();
+    }
+
+    internal void PaintBasicSingleWall(Vector2Int position)
+    {
+        PaintSingleTile(wallTilemap, wallTop, position);
     }
 }
