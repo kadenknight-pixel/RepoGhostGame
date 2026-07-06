@@ -842,9 +842,14 @@ MonoBehaviour:
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"isIdle","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"isLeftRight","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"isUp","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"isDown","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"downSpriteList","value":{"$content":[8,9,10,11],"$type":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"upSpriteList","value":{"$content":[12,13,14,15],"$type":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"isGhost","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"isScientist","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 5733249108348158981, guid: b7b0f3f7e6d8c4866bd8931705ad3d77, type: 3}
@@ -855,6 +860,14 @@ MonoBehaviour:
     - {fileID: -6494240072409913981, guid: 8cba68abc90c74611b51f7d63e8365bc, type: 3}
     - {fileID: 4462987690357576541, guid: 8cba68abc90c74611b51f7d63e8365bc, type: 3}
     - {fileID: 1966281652623417574, guid: 8cba68abc90c74611b51f7d63e8365bc, type: 3}
+    - {fileID: -2601815229019209235, guid: 9b7e7955da0a5439b82fb613b8fe4438, type: 3}
+    - {fileID: 921058502348843258, guid: 9b7e7955da0a5439b82fb613b8fe4438, type: 3}
+    - {fileID: 3636260217342321706, guid: 9b7e7955da0a5439b82fb613b8fe4438, type: 3}
+    - {fileID: -2841036995777287537, guid: 9b7e7955da0a5439b82fb613b8fe4438, type: 3}
+    - {fileID: 7803985345538953731, guid: f689a54aeb0284370892754a9adf4b43, type: 3}
+    - {fileID: 4268768821185095492, guid: f689a54aeb0284370892754a9adf4b43, type: 3}
+    - {fileID: -1928726058496483009, guid: f689a54aeb0284370892754a9adf4b43, type: 3}
+    - {fileID: -2914476519715376441, guid: f689a54aeb0284370892754a9adf4b43, type: 3}
 --- !u!212 &1267366896
 SpriteRenderer:
   serializedVersion: 2
