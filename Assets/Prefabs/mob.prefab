@@ -109,25 +109,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.VisualScripting.Core::Unity.VisualScripting.Variables
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"walk","value":{"$content":5.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"idleSpriteList","value":{"$content":[0,1,2,3],"$type":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"walk","value":{"$content":3.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"idleSpriteList","value":{"$content":[0,1,2,3,4,5,6,7,8],"$type":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"animationIndex","value":{"$content":0,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"indexAddition","value":{"$content":1,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"leftRightSpriteList","value":{"$content":[4,5,6,7],"$type":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"leftRightSpriteList","value":{"$content":[9,10,11,12,13,14,15,16],"$type":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"target","value":null,"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"enemyStopDistance","value":{"$content":3.05,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
-    - {fileID: 5733249108348158981, guid: b7b0f3f7e6d8c4866bd8931705ad3d77, type: 3}
-    - {fileID: 1616975505021324316, guid: b7b0f3f7e6d8c4866bd8931705ad3d77, type: 3}
-    - {fileID: 4321670215070243301, guid: b7b0f3f7e6d8c4866bd8931705ad3d77, type: 3}
-    - {fileID: 7286019762275235284, guid: b7b0f3f7e6d8c4866bd8931705ad3d77, type: 3}
-    - {fileID: 7099646251932906394, guid: 8cba68abc90c74611b51f7d63e8365bc, type: 3}
-    - {fileID: -6494240072409913981, guid: 8cba68abc90c74611b51f7d63e8365bc, type: 3}
-    - {fileID: 4462987690357576541, guid: 8cba68abc90c74611b51f7d63e8365bc, type: 3}
-    - {fileID: 1966281652623417574, guid: 8cba68abc90c74611b51f7d63e8365bc, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 8583216126520169299, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
+    - {fileID: 6217672124702850139, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
+    - {fileID: -5283759525917063176, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
+    - {fileID: 5169518806371483699, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
+    - {fileID: 435956849946588032, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
+    - {fileID: 8856344026520184350, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
+    - {fileID: 6506700387761283583, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
+    - {fileID: -7732125541178818052, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
 --- !u!114 &8842449859030929448
 MonoBehaviour:
   m_ObjectHideFlags: 0
