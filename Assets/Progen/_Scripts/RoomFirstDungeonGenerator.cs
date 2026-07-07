@@ -15,12 +15,14 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
     [SerializeField]
     [Range(0,10)]
     private int offset = 1;
-    [SerializeField]
-    private bool randomWalkRooms = false;
+    // [SerializeField]
+    // private bool randomWalkRooms = false;
     [SerializeField]
     private GameObject roomStarage;
     [SerializeField]
     private GameObject room;
+
+    // private int roomCount = 0;
 
     protected override void RunProceduralGeneration()
     {
@@ -29,6 +31,7 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
             {
                 GameObject.DestroyImmediate(child.gameObject);
             }
+        // roomCount = 0;s
         CreateRooms();
     }
 
@@ -155,11 +158,12 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
 
     private void CreateRoomBounds(Vector3Int position, Vector3Int size)
     {
-        room.transform.localScale = size - new Vector3(4,4,0);
+        room.transform.localScale = size - new Vector3((offset * 2) - 2, (offset * 2) - 2,0);
         // print(room.transform.localScale);
         room.transform.position = position + new Vector3(
-            (room.transform.localScale.x / 2) - 2, (room.transform.localScale.y / 2) - 2, 0
+            (room.transform.localScale.x / 2) - 3, (room.transform.localScale.y / 2) - 3, 0
         );
+        room.name = (room.transform.childCount + 1).ToString();
         Instantiate(room, roomStarage.transform);
     }
 }
