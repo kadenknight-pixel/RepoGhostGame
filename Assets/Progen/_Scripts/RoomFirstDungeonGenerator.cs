@@ -33,7 +33,9 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         foreach (var room in roomsList)
         {
             roomCenters.Add((Vector2Int)Vector3Int.RoundToInt(room.center));
-            // print("Created Room");
+            print(room.size);
+            print(room.position);
+            
 
         }
 
