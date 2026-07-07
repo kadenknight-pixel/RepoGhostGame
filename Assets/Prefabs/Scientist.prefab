@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8214558252170232707}
   - component: {fileID: 2311403758949762496}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bodyCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -342,7 +342,10 @@ MonoBehaviour:
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[UnityEngine.Sprite,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"isIdle","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"cooldown","value":{"$content":true,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"ghost","value":{"$content":32,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"mob","value":{"$content":33,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 5511841779378796476, guid: ee57639d54eab4897a55c61c7868ba96, type: 3}
     - {fileID: 8212679160685997930, guid: ee57639d54eab4897a55c61c7868ba96, type: 3}
@@ -368,14 +371,16 @@ MonoBehaviour:
     - {fileID: 8856344026520184350, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
     - {fileID: 6506700387761283583, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
     - {fileID: -7732125541178818052, guid: 34d2344853aaf42cda31012ad5ed81b6, type: 3}
-    - {fileID: 7782428236741364899, guid: 8a45cf2904d50413c9d1c239cc84df65, type: 3}
-    - {fileID: 7782428236741364899, guid: 8a45cf2904d50413c9d1c239cc84df65, type: 3}
-    - {fileID: 7782428236741364899, guid: 8a45cf2904d50413c9d1c239cc84df65, type: 3}
-    - {fileID: 7782428236741364899, guid: 8a45cf2904d50413c9d1c239cc84df65, type: 3}
-    - {fileID: 7782428236741364899, guid: 8a45cf2904d50413c9d1c239cc84df65, type: 3}
-    - {fileID: 7782428236741364899, guid: 8a45cf2904d50413c9d1c239cc84df65, type: 3}
-    - {fileID: 7782428236741364899, guid: 8a45cf2904d50413c9d1c239cc84df65, type: 3}
-    - {fileID: 7782428236741364899, guid: 8a45cf2904d50413c9d1c239cc84df65, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
+    - {fileID: 5693045445601400404, guid: 087ba2f4b2de7420399588ddb125a0e8, type: 3}
+    - {fileID: 7320901925015507737, guid: 5b36052dcf0de42e992ad6ffea541f1c, type: 3}
 --- !u!114 &6934012244764491927
 MonoBehaviour:
   m_ObjectHideFlags: 0
