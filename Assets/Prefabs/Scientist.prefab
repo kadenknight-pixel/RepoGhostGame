@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4481482572255627961}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.323, y: -0.093, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -577,7 +577,9 @@ MonoBehaviour:
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"ghost","value":{"$content":32,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"mob","value":{"$content":33,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"setSideX","value":{"$content":0.323,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"gunCooldown","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"bullet","value":{"$content":34,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 5511841779378796476, guid: ee57639d54eab4897a55c61c7868ba96, type: 3}
     - {fileID: 8212679160685997930, guid: ee57639d54eab4897a55c61c7868ba96, type: 3}
@@ -613,6 +615,7 @@ MonoBehaviour:
     - {fileID: 467790557433195241, guid: 1729785103e0d4bafabd0fcea09d4af7, type: 3}
     - {fileID: 5693045445601400404, guid: 087ba2f4b2de7420399588ddb125a0e8, type: 3}
     - {fileID: 7320901925015507737, guid: 5b36052dcf0de42e992ad6ffea541f1c, type: 3}
+    - {fileID: 7284088300074767320, guid: cb9070c34030742678fc1b89e1ab1d72, type: 3}
 --- !u!114 &6934012244764491927
 MonoBehaviour:
   m_ObjectHideFlags: 0
