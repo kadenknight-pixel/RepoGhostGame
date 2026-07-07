@@ -33,6 +33,7 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         foreach (var room in roomsList)
         {
             roomCenters.Add((Vector2Int)Vector3Int.RoundToInt(room.center));
+            print("Created Room");
         }
 
         HashSet<Vector2Int> corridors = ConnectRooms(roomCenters);
