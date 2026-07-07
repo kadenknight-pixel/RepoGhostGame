@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework.Internal;
 using UnityEngine;
+using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
 
 public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
@@ -15,9 +17,18 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
     private int offset = 1;
     [SerializeField]
     private bool randomWalkRooms = false;
+    [SerializeField]
+    private GameObject roomStarage;
+    [SerializeField]
+    private GameObject room;
 
     protected override void RunProceduralGeneration()
     {
+        while (roomStarage.transform.childCount > 0)
+            foreach (Transform child in roomStarage.transform)
+            {
+                GameObject.DestroyImmediate(child.gameObject);
+            }
         CreateRooms();
     }
 
@@ -33,18 +44,16 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         foreach (var room in roomsList)
         {
             roomCenters.Add((Vector2Int)Vector3Int.RoundToInt(room.center));
-            print(room.size);
-            print(room.position);
-            
-
         }
 
         HashSet<Vector2Int> corridors = ConnectRooms(roomCenters);
         floor.UnionWith(corridors);
 
         tilemapVisualizer.PaintFloorTiles(floor);
+        // tilemapVisualizer.PaintFloorTiles(hall);
         WallGenerator.CreateWalls(floor, tilemapVisualizer);
     }
+
 
     private HashSet<Vector2Int> ConnectRooms(List<Vector2Int> roomCenters)
     {
@@ -113,17 +122,44 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
     private HashSet<Vector2Int> CreateSimpleRooms(List<BoundsInt> roomsList)
     {
         HashSet<Vector2Int> floor = new HashSet<Vector2Int>();
+        HashSet<Vector2> roomCenters = new HashSet<Vector2>();
+        var startPos  = new Vector3Int(0, 0, 100);
         foreach (var room in roomsList)
-        {
+        {   
+            // print(room.size.x / 2);
+            // print(room.size.y / 2);
             for (int col = offset; col < room.size.x - offset; col++)
             {
                 for (int row = offset; row < room.size.y - offset; row++)
                 {
                     Vector2Int position = (Vector2Int)room.min + new Vector2Int(col, row);
                     floor.Add(position);
+                    // if (startPos == new Vector3Int(0, 0, 100))
+                        // startPos = new Vector3Int(col, row, 0);
+                    // print(position);
+                    if (col == offset && row == offset)
+                    {
+                        startPos = new Vector3Int(position.x, position.y, 0);
+                        // print(startPos);
+                    }
                 }
             }
+            CreateRoomBounds(startPos, room.size);
+            startPos = new Vector3Int(0, 0, 100);
+            // print(room.size);
+            // print(room.position);
+            // print("");
         }
         return floor;
+    }
+
+    private void CreateRoomBounds(Vector3Int position, Vector3Int size)
+    {
+        room.transform.localScale = size - new Vector3(4,4,0);
+        // print(room.transform.localScale);
+        room.transform.position = position + new Vector3(
+            (room.transform.localScale.x / 2) - 2, (room.transform.localScale.y / 2) - 2, 0
+        );
+        Instantiate(room, roomStarage.transform);
     }
 }
