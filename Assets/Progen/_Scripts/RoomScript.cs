@@ -13,6 +13,9 @@ public class RoomScript : MonoBehaviour
     [SerializeField]
     private GameObject enemyContainer;
 
+    public List<Collision2D> triggerList = new()
+
+    float difficulty = 0.05f;
 
     void PickRoomCharacter()
     {
@@ -20,7 +23,7 @@ public class RoomScript : MonoBehaviour
         {
             roomCharacter = "Passive";
         }
-        else if ( Random.value >= 0.0)
+        else if ( Random.value >= 0.5)
         {
             roomCharacter = "Hostile";
         }
@@ -40,43 +43,57 @@ public class RoomScript : MonoBehaviour
         int roomWidth = (int)transform.localScale.y - 2;
         // int potentialSpawnpoints = roomWidth * roomHeight;
         List<Vector3Int> spawnpoints = new();
-        spawnpoints.Add(new Vector3Int(0,0,0));
-        // for (int x = 0; x < roomWidth; x++)
-        // {
-        //     for (int y = 0; y < roomHeight; y++)
-        //     {
-        //         if (Random.value < 1.0)
-        //             spawnpoints.Add(new Vector3Int(y,x,0));
-        //     }
-        // }
+        // spawnpoints.Add(new Vector3Int(0,0,0));
+        for (int x = 0; x < roomWidth; x++)
+        {
+            for (int y = 0; y < roomHeight; y++)
+            {
+                if (Random.value < difficulty)
+                    spawnpoints.Add(new Vector3Int(y,x,0));
+            }
+        }
 
         foreach (var pos in spawnpoints)
         {
-            enemy.transform.position = transform.position - new Vector3(32.65f,20.75f,0) + pos - new Vector3(roomHeight/2, roomWidth/2, 0);
+            enemy.transform.position = transform.position - new Vector3(32.65f,20.25f,0) + pos - new Vector3(roomHeight/2, roomWidth/2, 0);
             if (roomHeight % 2 != 0)
                 enemy.transform.position += new Vector3(-0.5f, 0,0);
+            if (roomWidth % 2 != 0)
+                enemy.transform.position += new Vector3(0, -0.5f,0);
             Instantiate(enemy, enemyContainer.transform);
-            print(transform.position);
+            
         }
     }
 
 
-
+    
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name == "bodyCollision")
-            Debug.Log(roomCharacter);
+        {
+            
+        }
+            
             
 
     }
+
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        // print(collision.GetComponents());
+        triggerList.Add(collision);
+        
+
+    }
+
     void Start()
     {
         PickRoomCharacter();
-        SpawnEnemies();
-        // if (roomCharacter == "Hostile")
-        // {
-        //     SpawnEnemies();
-        // }
+        // SpawnEnemies();
+        if (roomCharacter == "Hostile")
+        {
+            SpawnEnemies();
+        }
     }
 }
