@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: gunScript
+  m_EditorClassIdentifier: Unity.VisualScripting.Flow::Unity.VisualScripting.ScriptGraphAsset
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":307.2519,"y":-16.74805},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"18cfaac3-b546-4458-a1c3-29fee5d5842b","$version":"A","$type":"Unity.VisualScripting.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":60.0},"guid":"e2602834-be7d-4ef8-921c-215df2811bf2","$version":"A","$type":"Unity.VisualScripting.Update"},{"member":{"name":"mousePosition","parameterTypes":null,"targetType":"UnityEngine.Input","targetTypeName":"UnityEngine.Input","$version":"A"},"defaultValues":{},"position":{"x":28.0,"y":6.0},"guid":"1a0acad1-9eda-4675-87fe-23656ec1b90e","$version":"A","$type":"Unity.VisualScripting.GetMember"},{"FloatValue":null,"Vector2Value":{"unit":{"$ref":"16"}},"InputActionChangeType":"OnHold","coroutine":false,"defaultValues":{"Target":null,"InputAction":{"id":"6b444451-8a00-4d00-a97e-f47457f736a8","name":"Look","expectedControlType":"Vector2","type":"Value","$type":"UnityEngine.InputSystem.InputAction"}},"position":{"x":-202.0,"y":-313.0},"guid":"843178a2-9401-40a2-859e-07ff00e8ffef","$version":"A","$type":"Unity.VisualScripting.InputSystem.OnInputSystemEventVector2","$id":"16"},{"chainable":false,"parameterNames":["position","eye"],"member":{"name":"ScreenToWorldPoint","parameterTypes":["UnityEngine.Vector3","UnityEngine.Camera+MonoOrStereoscopicEye"],"targetType":"UnityEngine.Camera","targetTypeName":"UnityEngine.Camera","$version":"A"},"defaultValues":{"target":null,"%position":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"%eye":{"$content":"Left","$type":"UnityEngine.Camera+MonoOrStereoscopicEye"}},"position":{"x":281.0,"y":-304.0},"guid":"8b4528ed-6207-4fa2-a4b5-89c91d964a94","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"20"},{"sourceUnit":{"$ref":"16"},"sourceKey":"trigger","destinationUnit":{"$ref":"20"},"destinationKey":"enter","guid":"6ac4a53f-2fd1-4d70-b60b-085ed212bce5","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"Vector2Value","destinationUnit":{"$ref":"20"},"destinationKey":"%position","guid":"f94bc723-c3fa-430c-a540-b77d3219cdef","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
