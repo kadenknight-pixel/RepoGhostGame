@@ -22,7 +22,7 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
     [SerializeField]
     private GameObject room;
 
-    // private int roomCount = 0;
+    private List<GameObject> rooms = new();
 
     protected override void RunProceduralGeneration()
     {
@@ -31,7 +31,7 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
             {
                 GameObject.DestroyImmediate(child.gameObject);
             }
-        // roomCount = 0;s
+        rooms = new();
         CreateRooms();
     }
 
@@ -129,31 +129,24 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         var startPos  = new Vector3Int(0, 0, 100);
         foreach (var room in roomsList)
         {   
-            // print(room.size.x / 2);
-            // print(room.size.y / 2);
             for (int col = offset; col < room.size.x - offset; col++)
             {
                 for (int row = offset; row < room.size.y - offset; row++)
                 {
                     Vector2Int position = (Vector2Int)room.min + new Vector2Int(col, row);
                     floor.Add(position);
-                    // if (startPos == new Vector3Int(0, 0, 100))
-                        // startPos = new Vector3Int(col, row, 0);
-                    // print(position);
                     if (col == offset && row == offset)
                     {
                         startPos = new Vector3Int(position.x, position.y, 0);
-                        // print(startPos);
                     }
                 }
             }
             CreateRoomBounds(startPos, room.size);
             startPos = new Vector3Int(0, 0, 100);
-            // print(room.size);
-            // print(room.position);
-            // print("");
         }
+        room.transform.position += new Vector3(10000, 10000, 0);
         return floor;
+        
     }
 
     private void CreateRoomBounds(Vector3Int position, Vector3Int size)
@@ -163,7 +156,9 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         room.transform.position = position + new Vector3(
             (room.transform.localScale.x / 2) - 3, (room.transform.localScale.y / 2) - 3, 0
         );
-        room.name = (room.transform.childCount + 1).ToString();
+        room.name = rooms.Count.ToString();
         Instantiate(room, roomStarage.transform);
+        rooms.Add(room);
+
     }
 }
