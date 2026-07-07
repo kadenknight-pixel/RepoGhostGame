@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 8cba68abc90c74611b51f7d63e8365bc
+guid: 8a45cf2904d50413c9d1c239cc84df65
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7099646251932906394
-    second: Image from Facebook (2)_0
+      213: 7782428236741364899
+    second: Image from Facebook (6)_0
   - first:
-      213: -6494240072409913981
-    second: Image from Facebook (2)_1
+      213: -1756298703390470007
+    second: Image from Facebook (6)_1
   - first:
-      213: 4462987690357576541
-    second: Image from Facebook (2)_2
+      213: 660855085690056768
+    second: Image from Facebook (6)_2
   - first:
-      213: 1966281652623417574
-    second: Image from Facebook (2)_3
+      213: 6313643830743426039
+    second: Image from Facebook (6)_3
+  - first:
+      213: 5447295180598107732
+    second: Image from Facebook (6)_4
+  - first:
+      213: -1136447723144366850
+    second: Image from Facebook (6)_5
+  - first:
+      213: -5052032562871517148
+    second: Image from Facebook (6)_6
+  - first:
+      213: -2225796729284820289
+    second: Image from Facebook (6)_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -174,13 +186,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Image from Facebook (2)_0
+      name: Image from Facebook (6)_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1
-        width: 12
-        height: 14
+        x: 1
+        y: 15
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a93f46d86a2078260800000000000000
-      internalID: 7099646251932906394
+      spriteID: 3ac40fc8f3db00c60800000000000000
+      internalID: 7782428236741364899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Image from Facebook (2)_1
+      name: Image from Facebook (6)_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 1
-        width: 12
-        height: 14
+        x: 1
+        y: 0
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38566e5ef03dfd5a0800000000000000
-      internalID: -6494240072409913981
+      spriteID: 9809ee072af50a7e0800000000000000
+      internalID: -1756298703390470007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Image from Facebook (2)_2
+      name: Image from Facebook (6)_2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 1
-        width: 12
-        height: 14
+        x: 17
+        y: 15
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5354b098a7bfed30800000000000000
-      internalID: 4462987690357576541
+      spriteID: 040f096f234db2900800000000000000
+      internalID: 660855085690056768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Image from Facebook (2)_3
+      name: Image from Facebook (6)_3
       rect:
         serializedVersion: 2
-        x: 50
-        y: 1
-        width: 12
-        height: 14
+        x: 17
+        y: 0
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,8 +267,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e0acf8ceb2a94b10800000000000000
-      internalID: 1966281652623417574
+      spriteID: 7f36cc9ec919e9750800000000000000
+      internalID: 6313643830743426039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from Facebook (6)_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 15
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e5f321b1ea89b40800000000000000
+      internalID: 5447295180598107732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from Facebook (6)_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4bd2421d68a30f0800000000000000
+      internalID: -1136447723144366850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from Facebook (6)_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 15
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4204650a62393e9b0800000000000000
+      internalID: -5052032562871517148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Image from Facebook (6)_7
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb280c0eaa16c11e0800000000000000
+      internalID: -2225796729284820289
       vertices: []
       indices: 
       edges: []
@@ -275,10 +375,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Image from Facebook (2)_0: 7099646251932906394
-      Image from Facebook (2)_1: -6494240072409913981
-      Image from Facebook (2)_2: 4462987690357576541
-      Image from Facebook (2)_3: 1966281652623417574
+      Image from Facebook (6)_0: 7782428236741364899
+      Image from Facebook (6)_1: -1756298703390470007
+      Image from Facebook (6)_2: 660855085690056768
+      Image from Facebook (6)_3: 6313643830743426039
+      Image from Facebook (6)_4: 5447295180598107732
+      Image from Facebook (6)_5: -1136447723144366850
+      Image from Facebook (6)_6: -5052032562871517148
+      Image from Facebook (6)_7: -2225796729284820289
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
