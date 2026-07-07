@@ -1,11 +1,10 @@
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SimpleRandomWalkParamaters_" , menuName = "PCG/SimpleRandomWalkData")]
-
-
+[CreateAssetMenu(fileName ="SimpleRandomWalkParameters_",menuName = "PCG/SimpleRAndomWalkData")]
 public class SimpleRandomWalkSO : ScriptableObject
 {
-    public int interations = 10, walklength = 10;
-    public bool startRandomlyEachInteration = true;
-
+    public int iterations = 10, walkLength = 10;
+    public bool startRandomlyEachIteration = true;
 }

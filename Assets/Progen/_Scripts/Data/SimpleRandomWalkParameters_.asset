@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c28c1767025b84f1d8d83861be6d360d, type: 3}
-  m_Name: SimpleRandomWalkParamaters_BigDungeon
+  m_Script: {fileID: 11500000, guid: ce60879b459fa4211a3981ce18635e2a, type: 3}
+  m_Name: SimpleRandomWalkParameters_
   m_EditorClassIdentifier: Assembly-CSharp::SimpleRandomWalkSO
-  interations: 100
-  walklength: 100
-  startRandomlyEachInteration: 1
+  iterations: 100
+  walkLength: 100
+  startRandomlyEachIteration: 1

@@ -1,15 +1,16 @@
-using System;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class WallGenerator
+public static class WallGenerator 
 {
-    public static void CreateWalls(HashSet<Vector2Int> floorPositions, TileMapVisualiser tileMapVisualiser)
+    public static void CreateWalls(HashSet<Vector2Int> floorPositions, TilemapVisualizer tilemapVisualizer)
     {
-        var basicWallsPositions = FindWallsInDirections(floorPositions, Direction2D.cardinalDirectionsList);
-        foreach (var position in basicWallsPositions)
+        var basicWallPositions = FindWallsInDirections(floorPositions, Direction2D.cardinalDirectionsList);
+        foreach (var position in basicWallPositions)
         {
-            tileMapVisualiser.PaintBasicSingleWall(position);
+            tilemapVisualizer.PaintSingleBasicWall(position);
         }
     }
 
@@ -21,7 +22,7 @@ public static class WallGenerator
             foreach (var direction in directionList)
             {
                 var neighbourPosition = position + direction;
-                if(floorPositions.Contains(neighbourPosition) == false)
+                if (floorPositions.Contains(neighbourPosition) == false)
                     wallPositions.Add(neighbourPosition);
             }
         }

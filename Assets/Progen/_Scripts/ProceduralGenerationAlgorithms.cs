@@ -1,20 +1,24 @@
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public static class ProcedualGenerationAlgorithms
+public static class ProceduralGenerationAlgorithms
 {
+    
     public static HashSet<Vector2Int> SimpleRandomWalk(Vector2Int startPosition, int walkLength)
     {
         HashSet<Vector2Int> path = new HashSet<Vector2Int>();
 
         path.Add(startPosition);
-        var prepos = startPosition;
+        var previousPosition = startPosition;
 
         for (int i = 0; i < walkLength; i++)
         {
-            var newPos = prepos + Direction2D.GetRandCardDir();
-            path.Add(newPos);
-            prepos = newPos;
+            var newPosition = previousPosition + Direction2D.GetRandomCardinalDirection();
+            path.Add(newPosition);
+            previousPosition = newPosition;
         }
         return path;
     }
@@ -22,7 +26,7 @@ public static class ProcedualGenerationAlgorithms
     public static List<Vector2Int> RandomWalkCorridor(Vector2Int startPosition, int corridorLength)
     {
         List<Vector2Int> corridor = new List<Vector2Int>();
-        var direction = Direction2D.GetRandCardDir();
+        var direction = Direction2D.GetRandomCardinalDirection();
         var currentPosition = startPosition;
         corridor.Add(currentPosition);
 
@@ -30,7 +34,6 @@ public static class ProcedualGenerationAlgorithms
         {
             currentPosition += direction;
             corridor.Add(currentPosition);
-
         }
         return corridor;
     }
@@ -62,11 +65,11 @@ public static class ProcedualGenerationAlgorithms
                 {
                     if (room.size.x >= minWidth * 2)
                     {
-                        SplitHorizontally(minWidth, roomsQueue, room);
+                        SplitVertically(minWidth, roomsQueue, room);
                     }
                     else if (room.size.y >= minHeight * 2)
                     {
-                        SplitVertically(minHeight, roomsQueue, room);
+                        SplitHorizontally(minHeight, roomsQueue, room);
                     }
                     else if (room.size.x >= minWidth && room.size.y >= minHeight)
                     {
@@ -99,19 +102,18 @@ public static class ProcedualGenerationAlgorithms
     }
 }
 
-public static class Direction2D 
+public static class Direction2D
 {
     public static List<Vector2Int> cardinalDirectionsList = new List<Vector2Int>
     {
         new Vector2Int(0,1), //UP
         new Vector2Int(1,0), //RIGHT
         new Vector2Int(0, -1), // DOWN
-        new Vector2Int(-1, 0) // LEFT
-
+        new Vector2Int(-1, 0) //LEFT
     };
 
-    public static Vector2Int GetRandCardDir()
+    public static Vector2Int GetRandomCardinalDirection()
     {
-        return cardinalDirectionsList[Random.Range(0, cardinalDirectionsList.Count)];
+        return cardinalDirectionsList[UnityEngine.Random.Range(0, cardinalDirectionsList.Count)];
     }
 }
