@@ -144,7 +144,9 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
             CreateRoomBounds(startPos, room.size);
             startPos = new Vector3Int(0, 0, 100);
         }
+        room.transform.position += new Vector3(10000, 10000, 0);
         return floor;
+        
     }
 
     private void CreateRoomBounds(Vector3Int position, Vector3Int size)
@@ -157,6 +159,6 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         room.name = rooms.Count.ToString();
         Instantiate(room, roomStarage.transform);
         rooms.Add(room);
-    
+
     }
 }
