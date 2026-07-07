@@ -53,6 +53,8 @@ public class RoomScript : MonoBehaviour
         foreach (var pos in spawnpoints)
         {
             enemy.transform.position = transform.position - new Vector3(32.65f,20.75f,0) + pos - new Vector3(roomHeight/2, roomWidth/2, 0);
+            if (roomHeight % 2 != 0)
+                enemy.transform.position += new Vector3(-0.5f, 0,0);
             Instantiate(enemy, enemyContainer.transform);
             print(transform.position);
         }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6816664428167575586}
   - component: {fileID: -8326508917316929331}
   - component: {fileID: -3183772590975482804}
+  - component: {fileID: 2848715325781322269}
   m_Layer: 0
   m_Name: gameManager
   m_TagString: Untagged
@@ -67,6 +68,23 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: 0cbd218685cc74c539103f6c5304e586, type: 2}
+--- !u!114 &2848715325781322269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2156856569957684896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c50771b0ddd48dd8c56a4949a87a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
+  roomStorage: {fileID: 0}
+  player: {fileID: 0}
+  startRoom: {fileID: 0}
+  endRoom: {fileID: 0}
+  allChildren: []
 --- !u!1 &7109931093145622383
 GameObject:
   m_ObjectHideFlags: 0
