@@ -13,7 +13,7 @@ public class RoomScript : MonoBehaviour
     [SerializeField]
     private GameObject enemyContainer;
 
-    public List<Collision2D> triggerList = new()
+    public List<Collider2D> triggerList = new();
 
     float difficulty = 0.05f;
 
@@ -65,19 +65,33 @@ public class RoomScript : MonoBehaviour
         }
     }
 
+    public Variables variables;
 
-    
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name == "bodyCollision")
         {
-            
+            foreach (var x in triggerList)
+            {
+                print(x.transform.tag);
+                if (x.transform.tag == "Enemy")
+                {
+                    // variables = collision.gameObject.GetComponent<Variables>();
+                    // variables.isAgro = true
+                    print("test");
+                    bool isAgro = Variables.Object(collision).Get<bool>("isAgro");
+                    isAgro = true;
+                    
+                }
+            }
         }
             
             
 
     }
+
+
 
     void OnTriggerStay2D(Collider2D collision)
     {
